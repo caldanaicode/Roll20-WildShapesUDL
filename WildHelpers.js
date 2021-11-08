@@ -3,6 +3,7 @@
  * Github: https://github.com/ocangelo/roll20/WildHelpers.js
  *
  * Changes by Caels:
+ * Github: https://github.com/caldanaicode/Roll20-WildShapesUDL/
  * The only thing I've changed in the helpers file is the makeLabelValue()
  * function. The UDL settings are not as simple as the legacy lighting,
  * and I updated this to be able to handle false and 0 for labels without
