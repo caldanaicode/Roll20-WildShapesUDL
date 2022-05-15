@@ -1407,6 +1407,11 @@ var WildShape = WildShape || (function() {
         const shapeName = args.shift();
 
         const tokenObj = getObj(msg.selected[0]._type, msg.selected[0]._id);
+        if (tokenObj == undefined) {
+            UTILS.chatErrorToPlayer(msg.who, "The token used with this menu no longer seems to exist.")
+            return;
+        }
+        
         const obj = findShifterData(tokenObj);
         if(obj)
         {            
@@ -2018,6 +2023,11 @@ var WildShape = WildShape || (function() {
                 }
 
                 const tokenObj = getObj(msg.selected[0]._type, msg.selected[0]._id);
+                if (tokenObj == undefined) {
+                    UTILS.chatErrorToPlayer(msg.who, "The token used with this menu no longer seems to exist.")
+                    return;
+                }
+
                 const obj = findShifterData(tokenObj);
                 if (obj)
                 {
