@@ -1737,6 +1737,10 @@ var WildShape = WildShape || (function() {
                                     shapeObj[0].set({controlledby: shifterControlledBy, inplayerjournals: shifterControlledBy});
                             });
                         }
+                        else if(charObj && charObj.length > 1) {
+                            UTILS.chatError("Cannot find character [" + newValue + "}] in the journal");
+                            isValueSet = false;
+                        }
                         else
                         {
                             UTILS.chatError("Cannot find character [" + newValue + "] in the journal");
